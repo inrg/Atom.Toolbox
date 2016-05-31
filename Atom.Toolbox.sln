@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atom.Toolbox", "Atom.Toolbox\Atom.Toolbox.csproj", "{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atom.Module.Base64Url", "Atom.Module.Base64Url\Atom.Module.Base64Url.csproj", "{B0027237-A098-47E4-BEC1-DD1C82767A99}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Base64Url", "Base64Url", "{E0EDAE0F-D770-4FA3-980B-24F2483D8FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atom.Module.Base64Url.Tests", "Atom.Module.Base64Url.Tests\Atom.Module.Base64Url.Tests.csproj", "{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0027237-A098-47E4-BEC1-DD1C82767A99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0027237-A098-47E4-BEC1-DD1C82767A99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0027237-A098-47E4-BEC1-DD1C82767A99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0027237-A098-47E4-BEC1-DD1C82767A99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B0027237-A098-47E4-BEC1-DD1C82767A99} = {E0EDAE0F-D770-4FA3-980B-24F2483D8FA8}
+		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15} = {E0EDAE0F-D770-4FA3-980B-24F2483D8FA8}
+	EndGlobalSection
+EndGlobal
