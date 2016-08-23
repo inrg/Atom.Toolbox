@@ -15,7 +15,7 @@ Feel free to bundle this module with your core library (using any packer, like I
 		<iconUrl>https://raw.githubusercontent.com/shuruev/Atom.Toolbox/master/icon.png</iconUrl>
 		<licenseUrl>https://raw.githubusercontent.com/shuruev/Atom.Toolbox/master/LICENSE</licenseUrl>
 		<tags>atom, toolbox, micromodule, configuration, config, appconfig, appsettings</tags>
-		<releaseNotes>Added classes for in-memory stored configuration.</releaseNotes>
+		<releaseNotes>Fixed a bug in memory configuration reader.</releaseNotes>
 	</metadata>
 	<files>
 		<file src="bin\$configuration$\$id$.pdb" target="lib\net45\" />

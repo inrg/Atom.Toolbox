@@ -47,7 +47,7 @@ namespace Atom.Toolbox
 			if (String.IsNullOrEmpty(norm))
 				throw new ArgumentException($"Specified value '{name}' cannot be used as property name.");
 
-			Add(name, value);
+			base.Add(norm, value);
 		}
 
 		/// <summary>
@@ -60,7 +60,7 @@ namespace Atom.Toolbox
 				throw new ArgumentException("Property name cannot be null.");
 
 			var norm = ConvertName(name);
-			return GetValue(norm);
+			return base.GetValue(norm);
 		}
 
 		/// <summary>
@@ -72,7 +72,7 @@ namespace Atom.Toolbox
 				throw new ArgumentException("Property name cannot be null.");
 
 			var norm = ConvertName(name);
-			return Remove(norm);
+			return base.Remove(norm);
 		}
 	}
 }
