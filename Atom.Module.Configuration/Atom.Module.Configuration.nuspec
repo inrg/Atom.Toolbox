@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+	<metadata>
+		<id>$id$</id>
+		<version>$version$</version>
+		<title>Configuration parser module (ATOM Toolbox)</title>
+		<authors>$author$</authors>
+		<description>
+A micro-module for parsing configuration values from App.config and other .NET configuration files.
+
+Feel free to bundle this module with your core library (using any packer, like ILMerge, ILRepack, LibZ, etc.), use micro-assembly as it is, or just take the source code and use it in your project.
+		</description>
+		<summary>Reading and parsing configuration values (from ATOM micro-module framework).</summary>
+		<projectUrl>https://github.com/shuruev/Atom.Toolbox</projectUrl>
+		<iconUrl>https://raw.githubusercontent.com/shuruev/Atom.Toolbox/master/icon.png</iconUrl>
+		<licenseUrl>https://raw.githubusercontent.com/shuruev/Atom.Toolbox/master/LICENSE</licenseUrl>
+		<tags>atom, toolbox, micromodule, configuration, config, appconfig, appsettings</tags>
+		<releaseNotes>Initial release.</releaseNotes>
+	</metadata>
+	<files>
+		<file src="bin\$configuration$\$id$.pdb" target="lib\net45\" />
+	</files>
+</package>
