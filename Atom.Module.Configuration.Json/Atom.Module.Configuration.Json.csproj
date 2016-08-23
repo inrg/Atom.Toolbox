@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}</ProjectGuid>
+    <ProjectGuid>{66A92AC7-61BF-43F0-AF89-E341604006C3}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Atom.Toolbox</RootNamespace>
-    <AssemblyName>Atom.Toolbox</AssemblyName>
+    <AssemblyName>Atom.Module.Configuration.Json</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -20,6 +20,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\Atom.Module.Configuration.Json.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -28,25 +29,15 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\Atom.Module.Configuration.Json.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Atom.Module.Base64Url, Version=1.0.5.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atom.Module.Base64Url.1.0.5\lib\net45\Atom.Module.Base64Url.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Atom.Module.Configuration, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atom.Module.Configuration.1.0.1\lib\net45\Atom.Module.Configuration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Atom.Module.Configuration.Json, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Atom.Module.Configuration.Json.1.0.3\lib\net45\Atom.Module.Configuration.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -56,16 +47,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="ConfigParserJson.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Atom.Module.Configuration\Atom.Module.Configuration.csproj">
+      <Project>{ca09f4b3-8ebb-4324-bff9-402e4dab95ad}</Project>
+      <Name>Atom.Module.Configuration</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Atom.Module.Configuration.Json.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>"$(SolutionDir)packages\ILMerge.2.14.1208\tools\ILMerge.exe" /out:"$(TargetFileName)" "Atom.Module.Base64Url.dll" "Atom.Module.Configuration.dll" "Atom.Module.Configuration.Json.dll" /xmldocs</PostBuildEvent>
-  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
