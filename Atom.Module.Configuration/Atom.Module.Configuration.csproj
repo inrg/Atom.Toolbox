@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Readers\AppSettingsSectionReader.cs" />
     <Compile Include="Readers\MemoryConfigReader.cs" />
     <Compile Include="Readers\DictionaryConfigReader.cs" />
     <Compile Include="Readers\AppConfigReader.cs" />
