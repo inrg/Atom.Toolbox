@@ -26,7 +26,10 @@ namespace Atom.Toolbox
 		/// </summary>
 		public DictionaryConfigReader(bool ignoreCase)
 		{
-			m_values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
+			m_values = new Dictionary<string, string>(
+				ignoreCase
+				? StringComparer.OrdinalIgnoreCase
+				: StringComparer.Ordinal);
 		}
 
 		/// <summary>
