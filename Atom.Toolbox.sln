@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Atom.Toolbox", "Atom.Toolbox\Atom.Toolbox.csproj", "{59121A26-BCB4-44DF-ABE8-72CC6AF20B07}"
 EndProject
@@ -58,5 +58,8 @@ Global
 		{2F1AFCCC-AA4D-4A6C-AC28-C35AB9724F15} = {E0EDAE0F-D770-4FA3-980B-24F2483D8FA8}
 		{CA09F4B3-8EBB-4324-BFF9-402E4DAB95AD} = {4472E5C6-1AA9-4ED9-B54F-42D1D28996CF}
 		{BCE8801F-D8C0-427F-94B2-C7744181CA7F} = {4472E5C6-1AA9-4ED9-B54F-42D1D28996CF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3853DF28-8D3C-491D-92C6-155959442798}
 	EndGlobalSection
 EndGlobal
