@@ -1,6 +1,15 @@
-nuget.exe pack "..\Atom.Module.Base64Url\Atom.Module.Base64Url.csproj" -Build -Properties Configuration=Release
+@ECHO OFF
+SETLOCAL
+
+::SET version=7.0.1023.1
+
+FOR /F %%f IN (packages.txt) DO (
+    nuget.exe pack ..\%%~nxf\%%~nxf.csproj -IncludeReferencedProjects -Build -Properties Configuration=Release
+)
+
 PAUSE
-nuget.exe pack "..\Atom.Module.Configuration\Atom.Module.Configuration.csproj" -Build -Properties Configuration=Release
-PAUSE
-nuget.exe pack "..\Atom.Module.Configuration.Json\Atom.Module.Configuration.Json.csproj" -IncludeReferencedProjects -Build -Properties Configuration=Release
+
+::XCOPY *.nupkg "%destination%" /D /Y
+::DEL *.nupkg
+
 PAUSE
